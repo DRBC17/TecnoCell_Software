@@ -15,12 +15,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TecnoCell_Software"
         mc:Ignorable="d"
-        Title="MainWindow" Height="470" Width="425" WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True">
+        Title="Login" Height="300" Width="550" WindowStyle="None" WindowStartupLocation="CenterScreen" AllowsTransparency="True">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
-            <RowDefinition Height="100"/>
+            
             <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="0"  Grid.ColumnSpan="2" Background="Gray" >
+            <Grid>
+                <StackPanel Background="Transparent" Orientation="Horizontal" HorizontalAlignment="Right" Margin="2">
+                    <Button Name="btnMin" Width="30" Height="30" Padding="0">
+                        <materialDesign:PackIcon Kind="WindowMinimize"/>
+                    </Button>
+                    <Button Name="btnCerrar" Width="30" Height="30" Padding="0">
+                        <materialDesign:PackIcon Kind="WindowClose"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
     </Grid>
 </Window>
